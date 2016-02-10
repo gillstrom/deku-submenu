@@ -1,0 +1,54 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: monospace;
+	list-style: none;
+}
+
+.MyMenu {
+	position: relative;
+	padding: 20px;
+	margin: 100px auto;
+	width: 300px;
+	border: 1px solid lightgray;
+	border-radius: 8px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, .25);
+}
+
+.Menu li:not(:last-child),
+.SubMenu-title {
+	padding-bottom: 6px;
+}
+
+.MenuItem:hover,
+.SubMenu-title:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.MenuItem--active:after {
+	content: '\2713';
+	margin-left: 5px;
+}
+
+.SubMenu > ul {
+	padding-left: 20px;
+}
+
+.SubMenu-menu {
+	display: none;
+}
+
+.SubMenu--open > .SubMenu-menu {
+	display: block;
+}
+
+.SubMenu-title:before {
+	content: '+';
+	position: absolute;
+	margin-left: -10px;
+}
+
+.SubMenu--open > .SubMenu-title:before {
+	content: '-';
+}
