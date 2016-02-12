@@ -17,11 +17,11 @@ const render = () => {
 						<MenuItem >San Jose Sharks</MenuItem>
 					</SubMenu>
 				</SubMenu>
-				<SubMenu title='Swedish Hockey League'>
+				<SubMenu title='Swedish Hockey League' active>
 					<MenuItem>Frölunda Indians</MenuItem>
 					<MenuItem>Växjö Lakers</MenuItem>
 				</SubMenu>
-				<MenuItem>Zamboni</MenuItem>
+				<MenuItem active>Zamboni</MenuItem>
 			</Menu>
 		</div>
 	);
