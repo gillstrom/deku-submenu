@@ -18,7 +18,7 @@ const render = () => {
 					</SubMenu>
 				</SubMenu>
 				<SubMenu title='Swedish Hockey League' active>
-					<MenuItem>Frölunda Indians</MenuItem>
+					<MenuItem onClick={() => console.log('clicked')}>Frölunda Indians</MenuItem>
 					<MenuItem>Växjö Lakers</MenuItem>
 				</SubMenu>
 				<MenuItem active>Zamboni</MenuItem>
